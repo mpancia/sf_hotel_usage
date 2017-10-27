@@ -95,9 +95,6 @@ assertthat::assert_that(nrow(data_list[[4]]) == NUM_NON_PROFIT_HOTELS)
 # Join the monthly tables
 joined_for_profit <- inner_join(data_list[[1]], data_list[[2]],
                                 by = c("for_profit_hotel_id",
-                                       "address_number",
-                                       "address_street",
-                                       "block_lot",
                                        "cofu_residential",
                                        "cofu_tourist"),
                                 suffix = c("_july", "_august")) %>%

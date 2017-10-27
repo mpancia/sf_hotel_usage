@@ -5,14 +5,14 @@ This repository contains Annual Unit Usage Report Status (AAURS) data from both 
 
 Every year, hotels are required to report:
 
-> (1)   The total number of units in the hotel as of October 15 of the year of filing;
-      (2)   The number of residential and tourist units as of October 15 of the year of filing;
-      (3)   The number of vacant residential units as of October 15 of the year of filing; if more than 50% of the units are vacant, explain why;
-      (4)   The average rent for the residential hotel units as of October 15 of the year of filing;
-      (5)   The number of residential units rented by week or month as of October 15 of the year of filing; and
-      (6)   The designation by room number and location of the residential units and tourist units as of October 15 of the year of filing, along with a graphic floorplan reflecting room designations for each floor. The owner or operator shall maintain such designated units as tourist or residential units for the following year unless the owner or operator notifies in writing the Department of Building Inspection of a redesignation of units; the owner or operator may redesignate units throughout the year, provided they notify the Department of Building Inspection in writing by the next business day following such redesignation, and update the graphic floorplan on file with the Department of Building Inspection and maintain the proper number of residential and tourist units at all times. The purpose of this provision is to simplify enforcement efforts while providing the owner or operator with reasonable and sufficient flexibility in designation and renting of rooms;
-      (7)   The nature of services provided to the permanent residents and whether there has been an increase or decrease in the services so provided;
-      (8)   A copy of the Daily Log, showing the number of units which are residential, tourist, or vacant on the first Friday of each month of the year of filing.
+* The total number of units in the hotel as of October 15 of the year of filing;
+* The number of residential and tourist units as of October 15 of the year of filing;
+* The number of vacant residential units as of October 15 of the year of filing; if more than 50% of the units are vacant, explain why;
+* The average rent for the residential hotel units as of October 15 of the year of filing;
+* The number of residential units rented by week or month as of October 15 of the year of filing; and
+* The designation by room number and location of the residential units and tourist units as of October 15 of the year of filing, along with a graphic floorplan reflecting room designations for each floor. The owner or operator shall maintain such designated units as tourist or residential units for the following  year unless the owner or operator notifies in writing the Department of Building Inspection of a redesignation of units; the owner or operator may redesignate units throughout the year, provided they notify the Department of Building Inspection in writing by the next business day following such redesignation,  and update the graphic floorplan on file with the Department of Building Inspection and maintain the proper number of residential and tourist units at all times. The purpose of this provision is to simplify enforcement efforts while providing the owner or operator with reasonable and sufficient flexibility in  designation and renting of rooms;
+* The nature of services provided to the permanent residents and whether there has been an increase or decrease in the services so provided;
+* A copy of the Daily Log, showing the number of units which are residential, tourist, or vacant on the first Friday of each month of the year of filing.
 
 ## Contents of data
 
@@ -20,9 +20,14 @@ The data is obtained from reports created on  July 18th and August 29th, 2017, b
 
 This data was obtained on October 26th, 2017 upon e-mail request from the Department of Building Inspection of San Francisco. 
 
+**NB:** There are some minor problems with the data:
+
+1. There are 2 properties that have a changing address from July/August in the data, and 1 property that has a changing block number. This is likely due to manual error, but they seem to represent the same property.
+2. There is no change in the non-profit report from July/August, so the final joined file contains all of the information about non-profit hotels. 
+
 # Usage
 
-The raw data is found in the file `/data/2016_Annual_Data_Comparison.xls`
+The raw data is found in the file `/data/2016_Annual_Data_Comparison.xls`. 
 
 ## Parsing data
 
