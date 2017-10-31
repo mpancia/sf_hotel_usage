@@ -55,8 +55,8 @@ And 2 joined files:
 | block_lot | The block lot ID of the hotel | TEXT | 
 |cofu_tourist|The number of tourist units allowed in the certificate of use | NUMERIC | 
 |cofu_residential|The number of residential units allowed in the certificate of use | NUMERIC | 
-|reported_residential |The reported number of occupied residential units | NUMERIC | 
-|reported_tourist |The reported number of occupied tourist units | NUMERIC | 
+|reported_occupied_residential |The reported number of occupied residential units | NUMERIC | 
+|reported_occupied_tourist |The reported number of occupied tourist units | NUMERIC | 
 |total_reported_hotel_units | The reported total number of units | NUMERIC | 
 |vacant_residential|The number of vacant residential units | NUMERIC | 
 |vacant_tourist|The number of vacant tourist units | NUMERIC | 

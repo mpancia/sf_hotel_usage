@@ -86,6 +86,20 @@ data_list[[1]] <- data_list[[1]] %>%
 data_list[[2]] <- data_list[[2]] %>%
   mutate_at(c("aaur_sufficient", "auur_filing_received"), yes_to_boolean)
 
+split_insert <- function(x, text, position) {
+  split_string <- strsplit(x, "_")[[1]]
+  added_string <- append(split_string, text, position)
+  paste(added_string, collapse = "_")
+}
+
+# Rename the "reported_residential" and "reported_tourist" columns to be more obvious
+data_list[[1]] <- data_list[[1]] %>%
+  rename("reported_occupied_residential" = reported_residential,
+         "reported_occupied_tourist" = reported_tourist)
+data_list[[2]] <- data_list[[2]] %>%
+  rename("reported_occupied_residential" = reported_residential,
+         "reported_occupied_tourist" = reported_tourist)
+
 # Check for length
 assertthat::assert_that(nrow(data_list[[1]]) == NUM_FOR_PROFIT_HOTELS)
 assertthat::assert_that(nrow(data_list[[2]]) == NUM_FOR_PROFIT_HOTELS)
