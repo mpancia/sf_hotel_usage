@@ -7,6 +7,11 @@ Package: BH
 Source: CRAN
 Version: 1.65.0-1
 
+Package: DBI
+Source: CRAN
+Version: 0.7
+Hash: 1ab72df487f06ad5f0de05446cdd4bd6
+
 Package: R6
 Source: CRAN
 Version: 2.2.2
@@ -21,6 +26,12 @@ Package: Rcpp
 Source: CRAN
 Version: 0.12.13
 Hash: b9d8d89ff10ca2d8bfdaccdf83045ba1
+
+Package: RgoogleMaps
+Source: CRAN
+Version: 1.4.1
+Requires: png
+Hash: 3310ba24c8436b297d1fb60ac4324ff2
 
 Package: assertthat
 Source: CRAN
@@ -117,6 +128,30 @@ Version: 0.2.0
 Requires: magrittr, tibble
 Hash: e5a3b0b96a39f5581467b0c6366f7408
 
+Package: futile.logger
+Source: CRAN
+Version: 1.4.3
+Requires: futile.options, lambda.r
+Hash: d1cc6584b39f2c4cfbe377fd94cbdbaa
+
+Package: futile.options
+Source: CRAN
+Version: 1.0.0
+Hash: 4f24cbf581681c263186b9425f05ba3e
+
+Package: geosphere
+Source: CRAN
+Version: 1.5-5
+Requires: sp
+Hash: 6772bef0f3f3aaa58b475479c03ff596
+
+Package: ggmap
+Source: CRAN
+Version: 2.6.1
+Requires: RgoogleMaps, digest, geosphere, ggplot2, jpeg, mapproj, plyr,
+    png, proto, reshape2, rjson, scales
+Hash: 3e5545418aab1ad8e47c218236dd4f0b
+
 Package: ggplot2
 Source: CRAN
 Version: 2.2.1
@@ -130,8 +165,8 @@ Hash: f4f7966fc357f60dc62dbffcea917eef
 
 Package: glue
 Source: CRAN
-Version: 1.1.1
-Hash: dfd5a27768175ae51d08dc6beba1ef11
+Version: 1.2.0
+Hash: 381e42baedecc633c0e547a0c7ca9de7
 
 Package: gtable
 Source: CRAN
@@ -172,6 +207,11 @@ Version: 1.3.1
 Requires: R6, curl, jsonlite, mime, openssl
 Hash: 2d32e01e53d532c812052e27a1021441
 
+Package: jpeg
+Source: CRAN
+Version: 0.1-8
+Hash: 189af3df9864c6aa8546033f08ba9358
+
 Package: jsonlite
 Source: CRAN
 Version: 1.5
@@ -188,6 +228,11 @@ Source: CRAN
 Version: 0.3
 Hash: ecf589b42cd284b03a4beb9665482d3e
 
+Package: lambda.r
+Source: CRAN
+Version: 1.2
+Hash: a17af00010c92198f159cebf1467e111
+
 Package: lazyeval
 Source: CRAN
 Version: 0.2.0
@@ -203,6 +248,17 @@ Package: magrittr
 Source: CRAN
 Version: 1.5
 Hash: bdc4d48c3135e8f3b399536ddf160df4
+
+Package: mapproj
+Source: CRAN
+Version: 1.2-5
+Requires: maps
+Hash: c1a918323e5d768ca1a5f91eea5571af
+
+Package: maps
+Source: CRAN
+Version: 3.2.0
+Hash: 086a0f4e41bf42749d8737e9407a4853
 
 Package: markdown
 Source: CRAN
@@ -263,6 +319,16 @@ Version: 1.8.4
 Requires: Rcpp
 Hash: 9598fbff0cce13bee89ae3a50230d93f
 
+Package: png
+Source: CRAN
+Version: 0.1-7
+Hash: 421d7d6e0fb4bd885ecbd909b6456b8b
+
+Package: proto
+Source: CRAN
+Version: 1.0.0
+Hash: f9a2528572320c1e0bc8783dfd6e0fae
+
 Package: psych
 Source: CRAN
 Version: 1.7.3.21
@@ -297,6 +363,11 @@ Source: CRAN
 Version: 1.4.2
 Requires: Rcpp, plyr, stringr
 Hash: cca35d2c477d99d8bc53908939eb659e
+
+Package: rjson
+Source: CRAN
+Version: 0.2.15
+Hash: def074f38d0cff3b597649ee6f976128
 
 Package: rlang
 Source: CRAN
@@ -340,6 +411,17 @@ Version: 0.3-1
 Requires: stringr
 Hash: 367275e3dcdd208339e131c7a41bec56
 
+Package: sf
+Source: CRAN
+Version: 0.5-4
+Requires: DBI, Rcpp, magrittr, units
+Hash: ccda55ded4b6ae34dda8d5429aebcdae
+
+Package: sp
+Source: CRAN
+Version: 1.2-5
+Hash: 355c8b47792e18a08da8708132f994e0
+
 Package: stringi
 Source: CRAN
 Version: 1.1.5
@@ -377,6 +459,17 @@ Requires: broom, dplyr, forcats, ggplot2, haven, hms, httr, jsonlite,
     lubridate, magrittr, modelr, purrr, readr, readxl, rvest, stringr,
     tibble, tidyr, xml2
 Hash: 72d5fada870c90b835bbdfc281283c99
+
+Package: udunits2
+Source: CRAN
+Version: 0.13
+Hash: 587587ec23c49271e0657fed726e7846
+
+Package: units
+Source: CRAN
+Version: 0.4-6
+Requires: udunits2
+Hash: 26637fde346198982175f763514832ff
 
 Package: viridisLite
 Source: CRAN

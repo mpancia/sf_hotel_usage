@@ -1,4 +1,4 @@
-for_profit_hotel_id,address_number,address_street,block_lot,cofu_residential,cofu_tourist,reported_occupied_residential,reported_occupied_tourist,vacant_residential,vacant_tourist,total_reported_hotel_units,auur_filing_received,aaur_sufficient
+for_profit_hotel_id,address_number,address_street,block_lot,cofu_residential,cofu_tourist,reported_occupied_residential,reported_occupied_tourist,vacant_residential,vacant_tourist,total_reported_hotel_units,aaur_filing_received,aaur_sufficient
 1,479,03RD ST,3763 022 00,19,0,16,1,1,1,19,TRUE,FALSE
 2,2342,03RD ST,4108 003A 01,18,0,NA,NA,NA,NA,NA,FALSE,FALSE
 3,3900,03RD ST,5242 021 01,19,0,19,0,0,0,19,TRUE,TRUE

@@ -1,0 +1,5 @@
+INFO [2017-10-31 21:58:50] There are 404 total hotels.
+INFO [2017-10-31 21:58:50] There are 368 hotels joined by block number.
+INFO [2017-10-31 21:58:50] There are 36 hotels unmatched by block number.
+INFO [2017-10-31 21:58:53] There are 5 hotels found by geocoding.
+INFO [2017-10-31 21:58:53] There are 31 hotels with imputed shapes.

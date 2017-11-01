@@ -31,7 +31,7 @@ FOR_PROFIT_JUL_2017_COLUMNS <- c("for_profit_hotel_id",
                              "vacant_residential",
                              "vacant_tourist",
                              "total_reported_hotel_units",
-                             "auur_filing_received",
+                             "aaur_filing_received",
                              "aaur_sufficient")
 # AUG_2017 has an extra column for the average rent
 FOR_PROFIT_AUG_2017_COLUMNS <- FOR_PROFIT_JUL_2017_COLUMNS %>%
@@ -82,9 +82,9 @@ data_list <- purrr::pmap(list(range_list, column_list, type_list),
                                       col_types = types))
 # Convert the "aaur_sufficient" and "aaur_filing_received" columns to boolean from Yes/No
 data_list[[1]] <- data_list[[1]] %>%
-  mutate_at(c("aaur_sufficient", "auur_filing_received"), yes_to_boolean)
+  mutate_at(c("aaur_sufficient", "aaur_filing_received"), yes_to_boolean)
 data_list[[2]] <- data_list[[2]] %>%
-  mutate_at(c("aaur_sufficient", "auur_filing_received"), yes_to_boolean)
+  mutate_at(c("aaur_sufficient", "aaur_filing_received"), yes_to_boolean)
 
 split_insert <- function(x, text, position) {
   split_string <- strsplit(x, "_")[[1]]
